@@ -21,7 +21,7 @@ axios.get('https://presidenstory.com/stat_pht.php').then((response) => {
     }
   }
 
-  fs.writeFile('allPresidents.txt', JSON.stringify(presidentalArray, null, 2), (err) => {
+  fs.writeFile('allPresidents.json', JSON.stringify(presidentalArray, null, 2), (err) => {
     if (err) throw err;
 
     console.log("Saved");
