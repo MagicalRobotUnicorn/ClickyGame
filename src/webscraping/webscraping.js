@@ -9,15 +9,19 @@ axios.get('https://presidenstory.com/stat_pht.php').then((response) => {
 
   let presidentalArray = [];
 
+  let index = 1;
+
   for (let i = 0; i < urlElems.length; i++) {
     if (!(urlElems[i].attribs.alt.includes("young"))) {
       let newPresident = {
         name: urlElems[i].attribs.alt,
         image: "http://www.presidenstory.com/" + urlElems[i].attribs.src,
-        checked: false
+        checked: false,
+        index
       }
 
       presidentalArray.push(newPresident);
+      index++;
     }
   }
 

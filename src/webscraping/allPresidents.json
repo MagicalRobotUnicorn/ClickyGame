@@ -2,226 +2,271 @@
   {
     "name": "George Washington",
     "image": "http://www.presidenstory.com/usimag/phot2/washington.jpg",
-    "checked": false
+    "checked": false,
+    "index": 1
   },
   {
     "name": "John Adams",
     "image": "http://www.presidenstory.com/usimag/phot2/adams.jpg",
-    "checked": false
+    "checked": false,
+    "index": 2
   },
   {
     "name": "Thomas Jefferson",
     "image": "http://www.presidenstory.com/usimag/phot2/jefferson.jpg",
-    "checked": false
+    "checked": false,
+    "index": 3
   },
   {
     "name": "James Madison",
     "image": "http://www.presidenstory.com/usimag/phot2/madison.jpg",
-    "checked": false
+    "checked": false,
+    "index": 4
   },
   {
     "name": "James Monroe",
     "image": "http://www.presidenstory.com/usimag/phot2/monroe.jpg",
-    "checked": false
+    "checked": false,
+    "index": 5
   },
   {
     "name": "John Quincy Adams",
     "image": "http://www.presidenstory.com/usimag/phot2/quincyadams.jpg",
-    "checked": false
+    "checked": false,
+    "index": 6
   },
   {
     "name": "Andrew Jackson",
     "image": "http://www.presidenstory.com/usimag/phot2/jackson.jpg",
-    "checked": false
+    "checked": false,
+    "index": 7
   },
   {
     "name": "Martin van Buren",
     "image": "http://www.presidenstory.com/usimag/phot2/vanburen.jpg",
-    "checked": false
+    "checked": false,
+    "index": 8
   },
   {
     "name": "William H. Harrison",
     "image": "http://www.presidenstory.com/usimag/phot2/h_harrison.jpg",
-    "checked": false
+    "checked": false,
+    "index": 9
   },
   {
     "name": "John Tyler",
     "image": "http://www.presidenstory.com/usimag/phot2/tyler.jpg",
-    "checked": false
+    "checked": false,
+    "index": 10
   },
   {
     "name": "James K. Polk",
     "image": "http://www.presidenstory.com/usimag/phot2/polk.jpg",
-    "checked": false
+    "checked": false,
+    "index": 11
   },
   {
     "name": "Zachary Taylor",
     "image": "http://www.presidenstory.com/usimag/phot2/taylor.jpg",
-    "checked": false
+    "checked": false,
+    "index": 12
   },
   {
     "name": "Millard Fillmore",
     "image": "http://www.presidenstory.com/usimag/phot2/fillmore.jpg",
-    "checked": false
+    "checked": false,
+    "index": 13
   },
   {
     "name": "Franklin Pierce",
     "image": "http://www.presidenstory.com/usimag/phot2/pierce.jpg",
-    "checked": false
+    "checked": false,
+    "index": 14
   },
   {
     "name": "James Buchanan",
     "image": "http://www.presidenstory.com/usimag/phot2/buchanan.jpg",
-    "checked": false
+    "checked": false,
+    "index": 15
   },
   {
     "name": "Abraham Lincoln",
     "image": "http://www.presidenstory.com/usimag/phot2/lincoln.jpg",
-    "checked": false
+    "checked": false,
+    "index": 16
   },
   {
     "name": "Andrew Johnson",
     "image": "http://www.presidenstory.com/usimag/phot2/ajohnson.jpg",
-    "checked": false
+    "checked": false,
+    "index": 17
   },
   {
     "name": "Ulysses S. Grant",
     "image": "http://www.presidenstory.com/usimag/phot2/grant.jpg",
-    "checked": false
+    "checked": false,
+    "index": 18
   },
   {
     "name": "Rutherford Hayes",
     "image": "http://www.presidenstory.com/usimag/phot2/hayes.jpg",
-    "checked": false
+    "checked": false,
+    "index": 19
   },
   {
     "name": "James Garfield",
     "image": "http://www.presidenstory.com/usimag/phot2/garfield.jpg",
-    "checked": false
+    "checked": false,
+    "index": 20
   },
   {
     "name": "Chester Arthur",
     "image": "http://www.presidenstory.com/usimag/phot2/arthur.jpg",
-    "checked": false
+    "checked": false,
+    "index": 21
   },
   {
     "name": "Grover Cleveland",
     "image": "http://www.presidenstory.com/usimag/phot2/cleveland.jpg",
-    "checked": false
+    "checked": false,
+    "index": 22
   },
   {
     "name": "Benjamin Harrison",
     "image": "http://www.presidenstory.com/usimag/phot2/harrison.jpg",
-    "checked": false
+    "checked": false,
+    "index": 23
   },
   {
     "name": "Grover Cleveland",
     "image": "http://www.presidenstory.com/usimag/phot2/cleveland.jpg",
-    "checked": false
+    "checked": false,
+    "index": 24
   },
   {
     "name": "William McKinley",
     "image": "http://www.presidenstory.com/usimag/phot2/mckinley.jpg",
-    "checked": false
+    "checked": false,
+    "index": 25
   },
   {
     "name": "Theodore Roosevelt",
     "image": "http://www.presidenstory.com/usimag/phot2/roosevelt.jpg",
-    "checked": false
+    "checked": false,
+    "index": 26
   },
   {
     "name": "William Taft",
     "image": "http://www.presidenstory.com/usimag/phot2/taft.jpg",
-    "checked": false
+    "checked": false,
+    "index": 27
   },
   {
     "name": "Woodrow Wilson",
     "image": "http://www.presidenstory.com/usimag/phot2/wilson.jpg",
-    "checked": false
+    "checked": false,
+    "index": 28
   },
   {
     "name": "Warren Harding",
     "image": "http://www.presidenstory.com/usimag/phot2/harding.jpg",
-    "checked": false
+    "checked": false,
+    "index": 29
   },
   {
     "name": "Calvin Coolidge",
     "image": "http://www.presidenstory.com/usimag/phot2/coolidge.jpg",
-    "checked": false
+    "checked": false,
+    "index": 30
   },
   {
     "name": "Herbert C. Hoover",
     "image": "http://www.presidenstory.com/usimag/phot2/hoover.jpg",
-    "checked": false
+    "checked": false,
+    "index": 31
   },
   {
     "name": "Franklin Roosevelt",
     "image": "http://www.presidenstory.com/usimag/phot2/fdr.jpg",
-    "checked": false
+    "checked": false,
+    "index": 32
   },
   {
     "name": "Harry S Truman",
     "image": "http://www.presidenstory.com/usimag/phot2/truman.jpg",
-    "checked": false
+    "checked": false,
+    "index": 33
   },
   {
     "name": "Dwight Eisenhower",
     "image": "http://www.presidenstory.com/usimag/phot2/ike.jpg",
-    "checked": false
+    "checked": false,
+    "index": 34
   },
   {
     "name": "John F. Kennedy",
     "image": "http://www.presidenstory.com/usimag/phot2/jfk.jpg",
-    "checked": false
+    "checked": false,
+    "index": 35
   },
   {
     "name": "Lyndon Johnson",
     "image": "http://www.presidenstory.com/usimag/phot2/johnson.jpg",
-    "checked": false
+    "checked": false,
+    "index": 36
   },
   {
     "name": "Richard Nixon",
     "image": "http://www.presidenstory.com/usimag/phot2/nixon.jpg",
-    "checked": false
+    "checked": false,
+    "index": 37
   },
   {
     "name": "Gerald R. Ford",
     "image": "http://www.presidenstory.com/usimag/phot2/ford.jpg",
-    "checked": false
+    "checked": false,
+    "index": 38
   },
   {
     "name": "Jimmy Carter",
     "image": "http://www.presidenstory.com/usimag/phot2/carter.jpg",
-    "checked": false
+    "checked": false,
+    "index": 39
   },
   {
     "name": "Ronald Reagan",
     "image": "http://www.presidenstory.com/usimag/phot2/reagan.jpg",
-    "checked": false
+    "checked": false,
+    "index": 40
   },
   {
     "name": "George H. W. Bush",
     "image": "http://www.presidenstory.com/usimag/phot2/bush.jpg",
-    "checked": false
+    "checked": false,
+    "index": 41
   },
   {
     "name": "Bill Clinton",
     "image": "http://www.presidenstory.com/usimag/phot2/clinton.jpg",
-    "checked": false
+    "checked": false,
+    "index": 42
   },
   {
     "name": "George W. Bush",
     "image": "http://www.presidenstory.com/usimag/phot2/wbush.jpg",
-    "checked": false
+    "checked": false,
+    "index": 43
   },
   {
     "name": "Barack Obama",
     "image": "http://www.presidenstory.com/usimag/phot2/obama.jpg",
-    "checked": false
+    "checked": false,
+    "index": 44
   },
   {
     "name": "Donald Trump",
     "image": "http://www.presidenstory.com/usimag/phot2/donald-trump.jpg",
-    "checked": false
+    "checked": false,
+    "index": 45
   }
 ]
