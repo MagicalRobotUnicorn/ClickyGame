@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import President from './President';
+// import {Container} from 'react-bootstrap/Container';
+// import {Row} from 'react-bootstrap/Row';
+// import {Col} from 'react-bootstrap/Col';
 
 export class gameBoard extends Component {
 
@@ -9,12 +12,16 @@ export class gameBoard extends Component {
     let arrayThree = [];
     let arrayFour = [];
     let arrayFive = [];
+    let arraySix = [];
+    let arraySeven = [];
+    let arrayEight = [];
+    let arrayNine = [];
     
-    let allArrays = [arrayOne, arrayTwo, arrayThree, arrayFour, arrayFive];
+    let allArrays = [arrayOne, arrayTwo, arrayThree, arrayFour, arrayFive, arraySix, arraySeven, arrayEight, arrayNine];
 
     let i = 0;
     for (let j = 0; j < allArrays.length; j++){
-      for (let k= 0; k < 9; k++){
+      for (let k= 0; k < 5; k++){
         (allArrays[j]).push(this.props.Presidents[i]);
         i++;
       }
@@ -23,9 +30,14 @@ export class gameBoard extends Component {
     console.log(allArrays);
     
     return (
-      <div class="row">
-      {this.props.Presidents.map((president) => (
-        <President key={president.id} president={president} />
+      <div className="container">
+      
+      {allArrays.map((array) => (
+        <div className="row">
+        {array.map((president) => (
+          <div className="col"><President key={president.id} president={president} /></div>
+        ))}
+        </div>
       ))}
       </div>
     )}

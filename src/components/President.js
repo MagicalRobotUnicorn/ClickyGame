@@ -6,9 +6,9 @@ class President extends React.Component {
   render (){
 
     return(
-      <div>
+      <React.Fragment>
       <img src={this.props.president.image} alt={this.props.president.name} />
-      </div>
+      </React.Fragment>
   );
 }
 }
