@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import President from './President';
-// import {Container} from 'react-bootstrap/Container';
-// import {Row} from 'react-bootstrap/Row';
-// import {Col} from 'react-bootstrap/Col';
 
 export class gameBoard extends Component {
 
@@ -35,7 +32,7 @@ export class gameBoard extends Component {
       {allArrays.map((array) => (
         <div className="row">
         {array.map((president) => (
-          <div className="col"><President key={president.id} president={president} /></div>
+          <div className="col"><President key={president.id} president={president} clickPresident={this.props.clickPresident} /></div>
         ))}
         </div>
       ))}
