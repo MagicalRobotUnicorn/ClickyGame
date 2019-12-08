@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-const Presidents = require('./webscraping/allPresidents.json');
+import GameBoard from './components/GameBoard';
+const rawMaterial = require('./webscraping/allPresidents.json');
 
 class App extends Component {
   state = {
-    Presidents
+    Presidents : rawMaterial
   }
 
   render() {
-    console.log(this.state.Presidents);
   return (
     <div className="App">
-
-
-      <Presidents />
-      <div>Header</div>
-      <div>Content</div>
-      <div>Footer</div>
+      <GameBoard Presidents={this.state.Presidents} />
     </div>
   );
   }
