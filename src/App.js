@@ -11,22 +11,23 @@ class App extends Component {
   }
 
   // On Click Event for President
-  // points.sort(function(a, b){return 0.5 - Math.random()});
   clickPresident = (id) => {
-    // const thisPresident = this.state.Presidents.find(x => x.id === id);
+    const thisPresident = this.state.Presidents.find(x => x.id === id);
 
-    if ((this.state.Presidents.filter(president => president.id === id).checked === true)) {
+    if (thisPresident.checked === true) {
       console.log('You Lose...');
     }
     else {
       this.setState({
-        presidents: this.state.Presidents.map(president => {
+        Presidents: this.state.Presidents.map(president => {
           if (president.id === id) {
             president.checked = true;
           }
           return president;
-        })
-      })
+        }),
+        Score: (this.state.Score + 1)
+      });
+
     }
   }
 
