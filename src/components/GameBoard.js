@@ -23,13 +23,13 @@ export class gameBoard extends Component {
         i++;
       }
     }
-
+ 
     console.log(allArrays);
     
     return (
       <div className="container">
       
-      {allArrays.map((array) => (
+      {allArrays.map((array) => ( 
         <div className="row">
         {array.map((president) => (
           <div className="col"><President key={president.id} president={president} clickPresident={this.props.clickPresident} /></div>
