@@ -25,7 +25,7 @@ export class gameBoard extends Component {
       {allArrays.map((array) => ( 
         <div className="row">
         {array.map((president) => (
-          <div className="col"><President key={president.index} president={president} clickPresident={this.props.clickPresident} /></div>
+          <div className="col presidentDiv"><President key={president.index} president={president} clickPresident={this.props.clickPresident} className="presidentDiv" /></div>
         ))}
         </div>
       ))}

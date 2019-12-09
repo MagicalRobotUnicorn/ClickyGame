@@ -10,8 +10,6 @@ const randomPresidents = rawMaterial.sort(function (a, b) { return 0.5 - Math.ra
 
 class App extends Component {
 
-  // randomPresidents = randomPresidents.slice(0, 14);
-
   state = {
     Presidents: randomPresidents,
     Score: 0,
@@ -27,9 +25,10 @@ class App extends Component {
     });
   }
 
+  // CheckWin function
   checkWin = () => {
-    for (let i = 0; i < this.state.Presidents.length; i++){
-      if (this.state.Presidents[i].checked === false){
+    for (let i = 0; i < this.state.Presidents.length; i++) {
+      if (this.state.Presidents[i].checked === false) {
         return false;
       }
     }
@@ -79,24 +78,15 @@ class App extends Component {
       endCondition: null,
       outGoingPresident: null
     });
-
-    // In the render add
-    // <Router>
-    //     <div className="App">
-    //       <div className="container">
-    //         <Header />
-    //         <Route exact path="/" render={props => (
-    //           <React.Fragment>
-    //             <AddTodo addTodo={this.addTodo} />
-    //             <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
-    //           </React.Fragment>
-    //         ) } />
-    //         <Route exact path="/about" component={About} />
-    //       </div>
-    //     </div>
-    //     </Router>
-
+    this.setState({
+      Presidents: this.state.Presidents.map(president => {
+        president.checked = false;
+        return president;
+      }
+      )
+    });
   }
+
   render() {
     return (
       <div className="App">
@@ -126,16 +116,5 @@ class App extends Component {
     );
   }
 }
-
-// I need to pass the win or lose condition through a function to the 
-
-// Also Add to render of App.js
-// {this.state.showPopup ? 
-//   <Popup
-//     text='Close Me'
-//     closePopup={this.togglePopup.bind(this)}
-//   />
-//   : null
-// }
 
 export default App;

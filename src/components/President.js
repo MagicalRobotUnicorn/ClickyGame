@@ -6,7 +6,7 @@ class President extends React.Component {
 
     return (
       <React.Fragment>
-        <img src={ image } alt={ name } onClick={ this.props.clickPresident.bind(this, index) }/>
+        <img className="presidentImage" src={ image } alt={ name } onClick={ this.props.clickPresident.bind(this, index) }/>
       </React.Fragment>
     );
   }

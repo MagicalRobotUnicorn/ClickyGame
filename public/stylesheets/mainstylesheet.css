@@ -1,11 +1,46 @@
-@font-face {
-  font-family: 'dollar_billregular';
-  src: url('dollarbill-webfont.woff2') format('woff2'),
-       url('dollarbill-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+/* Potential Font Choices */
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+
+/* Heading Styles */
+.totalHeading {
+  background-color: white;
+  text-align: 'center';
+  font-size: 120%;
+  border-bottom: 2px solid grey;
+  margin-bottom: 40px;
 }
 
+.mainHeading {
+  font-family: 'Parisienne', cursive;  color: black;
+  text-align: 'center';
+  font-size: 7rem;
+}
+
+
+.instructionHeading {
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+}
+
+.scoreDisplay {
+  font-family: 'PT Serif', serif;
+  font-size: 3rem;
+}
+
+/* President Display Styles */
+.presidentDiv {
+  margin: 5px -10px;
+}
+
+.presidentImage {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Pop Up Styles */
 .popup {
   position: fixed;
   width: 100%;
@@ -20,10 +55,62 @@
 
 .popup_inner {
   position: absolute;
-  left: 25%;
-  right: 25%;
+  width: 50%;
+  left: 30%;
+  right: 30%;
   top: 25%;
   bottom: 25%;
   margin: auto;
+  margin-left: -40px;
   background: white;
+  border-radius: 10px;
+}
+
+.winHeading {
+  font-family: 'Parisienne', cursive;  color: black;
+  font-size: 7rem;
+  margin-left: 7%;
+}
+
+img.losingImage {
+  margin-left: 33%;
+  border-radius: 5px;
+}
+
+.losingStatement {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+
+.resetGameButton {
+  width: 30%;
+  height: 40px;
+  font-family: 'PT Serif', serif;
+  font-size: 300%;
+  border: 1px solid black;
+  margin-left: 35%;
+}
+
+.buttonText {
+  font-size: 20px;
+}
+
+.statuePicture {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 7%;
+}
+
+.leftLeaf {
+  margin-top: 40px;
+  height: 50%;
+  width: auto;
+  float: left;
+}
+.rightLeaf {
+  margin-top: 40px;
+  height: 50%;
+  width: auto;
+  float:right;
 }
