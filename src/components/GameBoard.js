@@ -7,14 +7,9 @@ export class gameBoard extends Component {
     let arrayOne = [];
     let arrayTwo = [];
     let arrayThree = [];
-    let arrayFour = [];
-    let arrayFive = [];
-    let arraySix = [];
-    let arraySeven = [];
-    let arrayEight = [];
-    let arrayNine = [];
+
     
-    let allArrays = [arrayOne, arrayTwo, arrayThree, arrayFour, arrayFive, arraySix, arraySeven, arrayEight, arrayNine];
+    let allArrays = [arrayOne, arrayTwo, arrayThree];
 
     let i = 0;
     for (let j = 0; j < allArrays.length; j++){
@@ -23,8 +18,6 @@ export class gameBoard extends Component {
         i++;
       }
     }
- 
-    console.log(allArrays);
     
     return (
       <div className="container">
@@ -32,7 +25,7 @@ export class gameBoard extends Component {
       {allArrays.map((array) => ( 
         <div className="row">
         {array.map((president) => (
-          <div className="col"><President key={president.id} president={president} clickPresident={this.props.clickPresident} /></div>
+          <div className="col"><President key={president.index} president={president} clickPresident={this.props.clickPresident} /></div>
         ))}
         </div>
       ))}

@@ -14,88 +14,88 @@ const rawMaterial = require('./webscraping/allPresidents.json');
 // }
 // <button onClick={this.togglePopup.bind(this)}>show popup</button>
 
+const randomPresidents = rawMaterial.sort(function (a, b) { return 0.5 - Math.random() }).slice(0, 15);
 
-  class App extends Component {
-    state = {
-      Presidents: rawMaterial.sort(function (a, b) { return 0.5 - Math.random() }),
-      Score: 0
-    }
+class App extends Component {
 
-    // Toggle PopUp Function
-    togglePopup = () => {
-      this.setState({
-        showPopup: !this.state.showPopup
-      });
-    }
-  
+  // randomPresidents = randomPresidents.slice(0, 14);
 
-    // On Click Event for President
-    clickPresident = (id) => {
-      const thisPresident = this.state.Presidents.find(x => x.id === id);
-
-      if (thisPresident.checked === true) {
-        console.log('You Lose...');
-      }
-      else {
-        this.setState({
-          Presidents: this.state.Presidents.map(president => {
-            if (president.id === id) {
-              president.checked = true;
-            }
-            return president;
-          }),
-          Score: (this.state.Score + 1)
-        });
-
-        // console.log("First Round:", this.state.Presidents);
-
-        // let newOrder = this.state.Presidents.sort(function (a, b) { return 0.5 - Math.random() });
-
-        // Scramble 
-        // rawMaterial.sort(function (a, b) { return 0.5 - Math.random() }),
-        // this.setState({
-        //   Presidents: newOrder
-        //   }
-        // );
-
-        // console.log(this.state.Presidents); 
-      }
-    }
-
-    // In the render add
-    // <Router>
-    //     <div className="App">
-    //       <div className="container">
-    //         <Header />
-    //         <Route exact path="/" render={props => (
-    //           <React.Fragment>
-    //             <AddTodo addTodo={this.addTodo} />
-    //             <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
-    //           </React.Fragment>
-    //         ) } />
-    //         <Route exact path="/about" component={About} />
-    //       </div>
-    //     </div>
-    //     </Router>
-
-
-    render() {
-      return (
-        <div className="App">
-          <Header Score={this.state.Score} />
-          <GameBoard Presidents={this.state.Presidents} clickPresident={this.clickPresident} />
-        </div>
-      );
-    }
+  state = {
+    Presidents: randomPresidents,
+    Score: 0
   }
 
-  // Also Add to render of App.js
-  // {this.state.showPopup ? 
-  //   <Popup
-  //     text='Close Me'
-  //     closePopup={this.togglePopup.bind(this)}
-  //   />
-  //   : null
-  // }
+  // Toggle PopUp Function
+  togglePopup = () => {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
 
-  export default App;
+  // Win Condition and Lose Condition
+
+
+  // On Click Event for President
+  clickPresident = (passedId) => {
+    this.setState({
+      Presidents: this.state.Presidents.map(president => {
+        if (president.index === passedId) {
+          if (president.checked === true) {
+            console.log("You Lose");
+          }
+          else {
+            president.checked = true;
+            this.setState({ Score: (this.state.Score + 1) });
+          }
+        }
+        return president;
+      })
+    });
+
+    // Scramble
+    let newOrder = this.state.Presidents.sort(function (a, b) { return 0.5 - Math.random() });
+
+    // Use Scrambled Order as newOrder 
+    this.setState({
+      Presidents: newOrder
+    }
+    );
+  }
+
+  // In the render add
+  // <Router>
+  //     <div className="App">
+  //       <div className="container">
+  //         <Header />
+  //         <Route exact path="/" render={props => (
+  //           <React.Fragment>
+  //             <AddTodo addTodo={this.addTodo} />
+  //             <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+  //           </React.Fragment>
+  //         ) } />
+  //         <Route exact path="/about" component={About} />
+  //       </div>
+  //     </div>
+  //     </Router>
+
+
+  render() {
+    return (
+      <div className="App">
+        <Header Score={this.state.Score} />
+        <GameBoard Presidents={this.state.Presidents} clickPresident={this.clickPresident} />
+      </div>
+    );
+  }
+}
+
+// Also Add to render of App.js
+// {this.state.showPopup ? 
+//   <Popup
+//     text='Close Me'
+//     closePopup={this.togglePopup.bind(this)}
+//   />
+//   : null
+// }
+
+export default App;
