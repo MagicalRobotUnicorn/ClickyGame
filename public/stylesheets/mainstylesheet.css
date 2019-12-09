@@ -37,6 +37,7 @@ font-family: 'PT Serif', serif; */
 
 .presidentImage {
   border-radius: 10px;
+  box-shadow: 1px 1px #888888;
   cursor: pointer;
 }
 
